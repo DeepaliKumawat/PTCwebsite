@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<script>
+    
+    function revealstop1() {
+      var revealstop1 = document.querySelectorAll(".revealstop1");
+    
+      for (var i = 0; i < revealstop1.length; i++) {
+        var windowHeight = window.innerHeight;
+        var elementTop = revealstop1[i].getBoundingClientRect().top;
+        var elementVisible = 150;
+    
+        if (elementTop < windowHeight - elementVisible) {
+            revealstop1[i].classList.add("active");
+        } else {
+            revealstop1[i].classList.remove("active");
+        }
+      }
+    }
+    
+    window.addEventListener("scroll", revealstop1);
+    
+       
+    function revealsleft() {
+      var revealsleft = document.querySelectorAll(".revealsleft");
+    
+      for (var i = 0; i < revealsleft.length; i++) {
+        var windowHeight = window.innerHeight;
+        var elementTop = revealsleft[i].getBoundingClientRect().top;
+        var elementVisible = 150;
+    
+        if (elementTop < windowHeight - elementVisible) {
+            revealsleft[i].classList.add("active");
+        } else {
+            revealsleft[i].classList.remove("active");
+        }
+      }
+    }
+    
+    window.addEventListener("scroll", revealsleft);
+    
+    
+      
+    function revealsright() {
+      var revealsright = document.querySelectorAll(".revealsright");
+    
+      for (var i = 0; i < revealsright.length; i++) {
+        var windowHeight = window.innerHeight;
+        var elementTop = revealsright[i].getBoundingClientRect().top;
+        var elementVisible = 150;
+    
+        if (elementTop < windowHeight - elementVisible) {
+            revealsright[i].classList.add("active");
+        } else {
+            revealsright[i].classList.remove("active");
+        }
+      }
+    }
+    
+    window.addEventListener("scroll", revealsright);
+    </script>
+<body>
+    
+    <div id="header">
+        <div class="logo">
+        <img src="https://cdn.dribbble.com/users/1739239/screenshots/6148324/p-logo.png" height="180px" width="180px" style="padding-bottom:30px; padding-left: 20px;"  alt="">    
+        </div>
+        <div class="menu">
+            <div class="first"></div>
+            <div class=" second ">
+                <nav class="navbar">
+                    <form class="container-fluid justify-content-end">
+                        <li id="t1"><a href="course.html" class=" me-2" type="" style=" font-family: 'Open Sans'; color: black;"  >Category</a>
+                             <div id="d1">
+                            <div id="t2"><a class="ms-3 mt-3" href="">Development</a>
+                            <div id="d2">
+                                <a class="ms-3 mt-3" href="webdevlopment.html">Web Development</a><br>
+                            <a class="ms-3 mt-3" href="softwaretesting.html">Software Testing</a><br><
+                            <a class="ms-3 mt-3" href="">Data science</a><br>
+                            
+                            </div>
+                            </div><br>
+                            <a class="ms-3 mt-3" href="">IT and Software</a><br>
+                            <a class="ms-3 mt-3" href="">Disign</a><br>
+                            <a class="ms-3 mt-3" href="">Music</a><br>
+                            <a class="ms-3 mt-3" href="">Life style</a><br>
+          
+                          </div>
+                          </li>
+                        <a class="btn btn-outline me-2" type="" style=" font-family: 'Open Sans';">Teach on Udemy</a>
+                      <button class="btn btn-outline-dark me-2" type="button" style=" font-family: 'Open Sans';">Log in</button>
+                      <button class="btn btn-outline-dark me-2" type="button" style=" font-family: 'Open Sans';">Sign Up</button>
+                    </form>
+                </nav>
+                  
+
+
+                
+            </div>
+        </div>
+    </div>
+   
+    <div id="mid">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4"></div>
+                <div class="col-lg-4">
+                    <h4 class="h4  text-center " style="margin-top:70px; font-size: 36px;">Pratibha Technical classes</h4>
+                    <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum quo ullam veniam rem quod rerum voluptatem recusandae, expedita molestias consequatur</p>
+                </div>
+                <div class="col-lg-4"></div> 
+            </div>
+        </div>
+    </div>
+    <div class="container mt-4">
+        <h4 class="h3 revealstop1 ">A broad selection of courses</h4>
+        <p class="revealsleft active">Choose from 213,000 online video courses with new additions published every month
+
+
+        </p>
+
+        <div class="container">
+            <div class="">
+                <!-- Tab Nav -->
+                <div class="nav-wrapper position-relative mb-2">
+                    <ul class="nav nav-pills nav-fill flex-column flex-md-row" id="tabs-text" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link mb-sm-3 mb-md-0 active" id="tabs-text-1-tab" data-bs-toggle="tab"
+                                href="#tabs-text-1" role="tab" aria-controls="tabs-text-1"
+                                aria-selected="true">Python</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mb-sm-3 mb-md-0" id="tabs-text-2-tab" data-bs-toggle="tab"
+                                href="#tabs-text-2" role="tab" aria-controls="tabs-text-2"
+                                aria-selected="false">Java</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mb-sm-3 mb-md-0" id="tabs-text-3-tab" data-bs-toggle="tab"
+                                href="#tabs-text-3" role="tab" aria-controls="tabs-text-3"
+                                aria-selected="false">Php</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mb-sm-4 mb-md-0" id="tabs-text-3-tab" data-bs-toggle="tab"
+                                href="#tabs-text-4" role="tab" aria-controls="tabs-text-4"
+                                aria-selected="false">Web Designing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mb-sm-5 mb-md-0" id="tabs-text-5-tab" data-bs-toggle="tab"
+                                href="#tabs-text-5" role="tab" aria-controls="tabs-text-5"
+                                aria-selected="false">C</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mb-sm-6 mb-md-0" id="tabs-text-6-tab" data-bs-toggle="tab"
+                                href="#tabs-text-6" role="tab" aria-controls="tabs-text-6"
+                                aria-selected="false">C++</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- End of Tab Nav -->
+                <!-- Tab Content -->
+                <div class="card border-0">
+                    <div class="card-body p-0">
+                        <div class="tab-content" id="tabcontent1">
+                            <div class="tab-pane fade show active" id="tabs-text-1" role="tabpanel"
+                                aria-labelledby="tabs-text-1-tab">
+                                <h4 class="h4 mt-5">Expand your career opportunities with Python</h4>
+                                <p class="revealsleft active">Take one of Udemy’s range of Python courses and learn how to code using this
+                                    incredibly useful language. Its simple syntax and readability makes Python perfect
+                                    for Flask, Django, data science, and machine learning. You’ll learn how to build
+                                    everything from games to sites to apps. Choose from a range of courses that will
+                                    appeal to both beginners and advanced developers alike.</p>
+
+                                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <div class="container-fluid mt-4">
+                                                <div id="caro" style="display: flex;">
+                                                    <div class="card2">
+                                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQL3Uezrus-sn36Vsv2xcIlR5tfHhPA3aSkPOl5BSw942XaJKh8Jf3ernhBelBUusgfojU&usqp=CAU" height="150px" width="200px" alt="">
+                                                    </div>
+                                                    <div class="card2">
+                                                        <img src="https://images.ctfassets.net/23aumh6u8s0i/6uBzrqHNLlSAoER6HtgDN0/accd8f871b1de37f472b94da4346afa2/python-hero" height="150px" width="200px" alt="">
+                                                    </div>
+                                                    <div class="card2">
+                                                        <img src="https://www.netsolutions.com/insights/wp-content/uploads/2020/07/top-python-frameworks-for-web-development.jpg" height="150px" width="200px" alt="">
+                                                    </div>
+                                                    <div class="card2">
+                                                        <img src="https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_728,h_410/https://su-gi-rx.com/wp-content/uploads/2021/02/Python_%E5%88%9D%E5%BF%83%E8%80%85_%E4%BD%9C%E3%82%8C%E3%82%8B%E3%82%82%E3%81%AE.010-728x410.jpeg" height="150px" width="200px" alt="">
+                                                    </div>
+                                                    <div class="card2">
+                                                        <img src="https://www.netsolutions.com/insights/wp-content/uploads/2022/05/python-applications.webp" height="150px" width="200px" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="container-fluid mt-4">
+                                                <div id="caro" style="display: flex;">
+                                                    <div class="card2">
+                                                        <img src="https://www.kindpng.com/picc/m/449-4494517_python-domains-edureka-application-domains-of-python-hd.png" height="150px" width="200px" alt="">
+                                                    </div>
+                                                    <div class="card2">
+                                                        <img src="https://static.javatpoint.com/python/images/python-applications.png" height="150px" width="200px" alt="">
+                                                    </div>
+                                                    <div class="card2">
+                                                        <img src="https://miro.medium.com/max/1080/1*5QzF45b9IptrTP1Y-7VB8Q.png" height="150px" width="200px" alt="">
+                                                    </div>
+                                                    <div class="card2">
+                                                        <img src="https://www.passionateinmarketing.com/wp-content/uploads/2021/08/1_DeYc7KoKK6Q0JtFVuwziOQ-1.jpeg" height="150px" width="200px" alt="">
+                                                    </div>
+                                                    <div class="card2">
+                                                        <img src="https://www.thecrazyprogrammer.com/wp-content/uploads/2018/09/What-is-Python-used-for.png" height="150px" width="200px" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="container-fluid mt-4">
+                                                <div id="caro" style="display: flex;">
+                                                    <div class="card2">
+                                                        <img src="https://d2mk45aasx86xg.cloudfront.net/Python_Tools_For_Developers_f8e0de0a1c.webp" height="150px" width="200px" alt="">
+                                                    </div>
+                                                    <div class="card2">
+                                                        <img src="https://i.pinimg.com/originals/95/b9/d3/95b9d3656a9c55b2916eea1296764473.jpg" height="150px" width="200px" alt="">
+                                                    </div>
+                                                    <div class="card2">
+                                                        <img src="https://techyeverything.com/wp-content/uploads/2020/11/main-10.jpg" height="150px" width="200px" alt="">
+                                                    </div>
+                                                    <div class="card2">
+                                                        <img src="https://litslink.com/wp-content/uploads/2020/04/python-libraries-for-machine-learning.png" height="150px" width="200px" alt="">
+                                                    </div>
+                                                    <div class="card2">
+                                                        <img src="https://statinfer.com/wp-content/uploads/ML-made-easy-Python.jpg" height="150px" width="200px" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button"
+                                        data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button"
+                                        data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="tabs-text-2" role="tabpanel"
+                                aria-labelledby="tabs-text-2-tab">
+                                <p class="revealsleft active">Photo booth stumptown tote bag Banksy, elit small batch freegan sed. Craft beer elit
+                                    seitan exercitation, photo booth et 8-bit kale chips proident chillwave deep v
+                                    laborum. Aliquip veniam delectus, Marfa eiusmod
+                                    Pinterest in do umami readymade swag.
+                                Day handsome addition horrible sensible goodness two contempt. Evening for married
+                                    his account removal. Estimable me disposing of be moonlight cordially curiosity.</p>
+                                
+                                    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <div class="container-fluid mt-4">
+                                                    <div id="caro" style="display: flex;">
+                                                        <div class="card2">
+                                                            <img src="https://www.edureka.co/blog/wp-content/uploads/2018/01/2-2.png" height="150px" width="200px" alt="">
+                                                        </div>
+                                                        <div class="card2">
+                                                            <img src="https://www.edureka.co/blog/wp-content/uploads/2018/01/3-2.png" height="150px" width="200px" alt="">
+                                                        </div>
+                                                        <div class="card2">
+                                                            <img src="https://a5p9r2v4.rocketcdn.me/wp-content/uploads/2022/08/Screen-Shot-2022-08-18-at-11.53.33-AM.png" height="150px" width="200px" alt="">
+                                                        </div>
+                                                        <div class="card2">
+                                                            <img src="https://www.javatpoint.com/images/core/java-features.png" height="150px" width="200px" alt="">
+                                                        </div>
+                                                        <div class="card2">
+                                                            <img src="https://cdn.lynda.com/course/377484/377484-636807313660331603-16x9.jpg" height="150px" width="200px" alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <div class="container-fluid mt-4">
+                                                    <div id="caro" style="display: flex;">
+                                                        <div class="card2">
+                                                            <img src="https://d3mxt5v3yxgcsr.cloudfront.net/courses/2050/course_2050_image.png" height="150px" width="200px" alt="">
+                                                        </div>
+                                                        <div class="card2">
+                                                            <img src="https://www.chandigarhhelp.com/wp-content/uploads/2020/01/Top-Java-Training-Institutes-in-Chandigarh.jpg" height="150px" width="200px" alt="">
+                                                        </div>
+                                                        <div class="card2">
+                                                            <img src="https://cdn.hswstatic.com/gif/java-code.jpg" height="150px" width="200px" alt="">
+                                                        </div>
+                                                        <div class="card2">
+                                                            <img src="https://static.javatpoint.com/core/images/what-is-java-used-for.png" height="150px" width="200px" alt="">
+                                                        </div>
+                                                        <div class="card2">
+                                                            <img src="https://cdn.hackr.io/uploads/posts/large/16594746288N7tDOeNBg.jpg" height="150px" width="200px" alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <div class="container-fluid mt-4">
+                                                    <div id="caro" style="display: flex;">
+                                                        <div class="card2">
+                                                            <img src="https://miro.medium.com/max/1024/0*0qvaZ1DA13ykgwUg" height="150px" width="200px" alt="">
+                                                        </div>
+                                                        <div class="card2">
+                                                            <img src="https://journaldev.nyc3.digitaloceanspaces.com/2013/08/java-web-application.png" height="150px" width="200px" alt="">
+                                                        </div>
+                                                        <div class="card2">
+                                                            <img src="https://res.infoq.com/articles/java-14-feature-spotlight/en/headerimage/Java-14-Feature-Spotlight-Records-h-1580471331167.jpg" height="150px" width="200px" alt="">
+                                                        </div>
+                                                        <div class="card2">
+                                                            <img src="https://assets.cdn.prod.twilio.com/images/RHWxEL1tiiEhgx6eT6X77zu1RolnTTDqv6IkMScTs35YZC.width-808.png" height="150px" width="200px" alt="">
+                                                        </div>
+                                                        <div class="card2">
+                                                            <img src="https://assets.website-files.com/6029242da9cc798b70c41b19/628cef55d3a362160b001d44_Thumb_Java%20Code%20Review%20Checklist-min%20(1).jpg" height="150px" width="200px" alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button class="carousel-control-prev" type="button"
+                                            data-bs-target="#carouselExample" data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button"
+                                            data-bs-target="#carouselExample" data-bs-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Next</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            <div class="tab-pane fade" id="tabs-text-3" role="tabpanel"
+                                aria-labelledby="tabs-text-3-tab">
+                                <p class="revealsleft active">Exercitation photo booth stumptown tote bag Banksy, elit small batch freegan sed.
+                                    Craft beer elit seitan exercitation, photo booth et 8-bit kale chips proident
+                                    chillwave deep v laborum. Aliquip veniam delectus,
+                                    Marfa eiusmod Pinterest in do umami readymade swag.
+                                Day handsome addition horrible sensible goodness two contempt. Evening for married
+                                    his account removal. Estimable me disposing of be moonlight cordially curiosity.</p>
+
+                                    <div id="carouselEx" class="carousel slide" data-bs-ride="carousel">
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <div class="container-fluid mt-4">
+                                                    <div id="caro" style="display: flex;">
+                                                        <div class="card2">
+                                                            <img src="https://contentstatic.techgig.com/photo/77501704/5-incredible-use-cases-of-php-in-2020.jpg?333292" height="150px" width="200px" alt="">
+                                                        </div>
+                                                        <div class="card2">
+                                                            <img src="https://media.istockphoto.com/id/1167498797/vector/web-development-coding-and-programming-responsive-layout-internet-site-or-app-of-devices.jpg?s=612x612&w=0&k=20&c=oWp_9mIiX1EBJtdd3il6eo3i-1Qe5Ou9RQMkGnzTNtk=" height="150px" width="200px" alt="">
+                                                        </div>
+                                                        <div class="card2">
+                                                            <img src="https://static.javatpoint.com/phppages/images/php-features.png" height="150px" width="200px" alt="">
+                                                        </div>
+                                                        <div class="card2">
+                                                            <img src="https://mrsphp.com/wp-content/uploads/2022/07/php-s1.jpg" height="150px" width="200px" alt="">
+                                                        </div>
+                                                        <div class="card2">
+                                                            <img src="https://www.mindrops.com/images/advait-solutions-php-development.jpg" height="150px" width="200px" alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <div class="container-fluid mt-4">
+                                                    <div id="caro" style="display: flex;">
+                                                        <div class="card2">
+                                                            <img src="https://kinsta.com/wp-content/uploads/2021/04/Features-of-PHP.jpg" height="150px" width="200px" alt="">
+                                                        </div>
+                                                        <div class="card2">
+                                                            <img src="http://1.bp.blogspot.com/-1EZQ0UY9Tho/UUNNyIgDNEI/AAAAAAAABN8/cT_B8C0zmK8/w1200-h630-p-k-no-nu/PHP+Fundamentos+de+PHP+-+Codegeando,com.jpg" height="150px" width="200px" alt="">
+                                                        </div>
+                                                        <div class="card2">
+                                                            <img src="https://sites.google.com/site/proyeciut/_/rsrc/1431816683772/funciones-de-php-1/ph.jpg?height=400&width=552" height="150px" width="200px" alt="">
+                                                        </div>
+                                                        <div class="card2">
+                                                            <img src="https://3.bp.blogspot.com/-Q-SwEd6LNxo/WPpgOQEYLpI/AAAAAAAAAhM/WK-aPMtQrbgHmnSreoiVPyDc_g5Lgy3FgCLcB/s1600/php.png" height="150px" width="200px" alt="">
+                                                        </div>
+                                                        <div class="card2">
+                                                            <img src="https://1.bp.blogspot.com/--NY2dTo3DKc/YNOTlTRCcEI/AAAAAAAABgY/zpp6j3304jMNcI3fprT_A2U4uC9mMuXWwCLcBGAsYHQ/s16000/PHP%2BFull%2BForm%2B%2528www.tutorialsmate.com%2529.png" height="150px" width="200px" alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <div class="container-fluid mt-4">
+                                                    <div id="caro" style="display: flex;">
+                                                        <div class="card2">
+                                                            <img src="https://netslovers.com/wp-content/uploads/2021/10/php-ide.jpg" height="150px" width="200px" alt="">
+                                                        </div>
+                                                        <div class="card2">
+                                                            <img src="https://i0.wp.com/unaaldia.hispasec.com/wp-content/uploads/2019/09/Captura-de-pantalla-de-2019-09-07-04-06-35.png?fit=983%2C633&ssl=1" height="150px" width="200px" alt="">
+                                                        </div>
+                                                        <div class="card2">
+                                                            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjap0T5prHvmvy5FtyulJDz1Puskk0FJsXPCgFgIsAqcMj9ibwFd7J78yEJqerHk4IdTPt4EteOSyIIvsWMjpBYuzayjMKn4VnKp4vQ_ABLtpR2sg5TWDlIOCjIa-qC-7yPa14MPTjVCTpv3Sjf5N4c74kdOcjrpWbNltJ4QwLWh1Jy_sf6Db7SOqea/s1600/php-full-form.png" height="150px" width="200px" alt="">
+                                                        </div>
+                                                        <div class="card2">
+                                                            <img src="https://www.sitesbay.com/php/images/uses-of-php.png" height="150px" width="200px" alt="">
+                                                        </div>
+                                                        <div class="card2">
+                                                            <img src="https://litslink.com/wp-content/uploads/2021/05/companies-use-php.png" height="150px" width="200px" alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button class="carousel-control-prev" type="button"
+                                            data-bs-target="#carouselEx" data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button"
+                                            data-bs-target="#carouselEx" data-bs-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Next</span>
+                                        </button>
+                                    </div>
+                            </div>
+                            <div class="tab-pane fade" id="tabs-text-4" role="tabpanel"
+                                aria-labelledby="tabs-text-4-tab">
+                                <p class="revealsleft active">Exercitation photo booth stumptown tote bag Banksy, elit small batch freegan sed.
+                                    Craft beer elit seitan exercitation, photo booth et 8-bit kale chips proident
+                                    chillwave deep v laborum. Aliquip veniam delectus,
+                                    Marfa eiusmod Pinterest in do umami readymade swag.
+                                Day handsome addition horrible sensible goodness two contempt. Evening for married
+                                    his account removal. Estimable me disposing of be moonlight cordially curiosity.</p>
+                                    <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <div class="container-fluid mt-4">
+                                                    <div id="caro" style="display: flex;">
+                                                        <div class="card2">
+                                                            <img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20220630132824/HTML-Full-Form.jpg" height="150px" width="200px" alt="">
+                                                        </div>
+                                                        <div class="card2">
+                                                            <img src="https://www.udacity.com/blog/wp-content/uploads/2020/06/HTML_Blog-scaled.jpeg" height="150px" width="200px" alt="">
+                                                        </div>
+                                                        <div class="card2">
+                                                            <img src="https://www.oxfordwebstudio.com/user/pages/06.da-li-znate/sta-je-html/sta-je-html.jpg" height="150px" width="200px" alt="">
+                                                        </div>
+                                                        <div class="card2">
+                                                            <img src="https://www.w3docs.com/uploads/media/default/0001/05/805cddb75d8fdc035886bc8d78487eef8b3845bb.png" height="150px" width="200px" alt="">
+                                                        </div>
+                                                        <div class="card2">
+                                                            <img src="https://codeinstitute.net/wp-content/uploads/2022/01/What-are-html-tags-2.png" height="150px" width="200px" alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <div class="container-fluid mt-4">
+                                                    <div id="caro" style="display: flex;">
+                                                        <div class="card2">
+                                                            <img src="https://res.cloudinary.com/cloudinary-marketing/images/w_1540,h_847/f_auto,q_auto/v1649718594/Web_Assets/blog/working_with_css_22218720ab/working_with_css_22218720ab-jpg?_i=AA" height="150px" width="200px" alt="">
+                                                        </div>
+                                                        <div class="card2">
+                                                            <img src="https://community-cdn-digitalocean-com.global.ssl.fastly.net/GCebuFuAZhQWvwVsKcMzeQp4" height="150px" width="200px" alt="">
+                                                        </div>
+                                                        <div class="card2">
+                                                            <img src="https://images.velog.io/images/gil0127/post/f8fec11e-1a2a-408e-8344-1311f3251ea0/css%20%ED%91%9C%EC%A7%80.jpeg" height="150px" width="200px" alt="">
+                                                        </div>
+                                                        <div class="card2">
+                                                            <img src="https://cdn.lynda.com/course/5038219/5038219-1592866794232-16x9.jpg" height="150px" width="200px" alt="">
+                                                        </div>
+                                                        <div class="card2">
+                                                            <img src="https://t3.ftcdn.net/jpg/03/04/25/10/360_F_304251038_h64cjiIZwP1Ab8w1WBoC66cAFZUAIypq.jpg" height="150px" width="200px" alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <div class="container-fluid mt-4">
+                                                    <div id="caro" style="display: flex;">
+                                                        <div class="card2">
+                                                            <img src="https://www.tutorialrepublic.com/lib/images/bootstrap-5.0-illustration.png" height="150px" width="200px" alt="">
+                                                        </div>
+                                                        <div class="card2">
+                                                            <img src="https://res.cloudinary.com/endjin/image/upload/f_auto/q_80/assets/images/blog/2022/06/header-tips-for-implementing-responsive-designs-using-bootstrap.png" height="150px" width="200px" alt="">
+                                                        </div>
+                                                        <div class="card2">
+                                                            <img src="https://www.tutorialrepublic.com/lib/images/javascript-illustration.png" height="150px" width="200px" alt="">
+                                                        </div>
+                                                        <div class="card2">
+                                                            <img src="https://dvg5hr78c8hf1.cloudfront.net/2016/06/17/13/45/01/cc2fac88-2f81-4cc5-9ec9-334042781fd0/1*OsjnQFK1i6CkjXQmTErAtw.jpeg" height="150px" width="200px" alt="">
+                                                        </div>
+                                                        <div class="card2">
+                                                            <img src="https://cdn.geekboots.com/geek/javascript-meta-1652702081069.jpg" height="150px" width="200px" alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button class="carousel-control-prev" type="button"
+                                            data-bs-target="#carousel" data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button"
+                                            data-bs-target="#carousel" data-bs-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Next</span>
+                                        </button>
+                                    </div>
+                            </div>
+                            <div class="tab-pane fade" id="tabs-text-5" role="tabpanel"
+                                aria-labelledby="tabs-text-5-tab">
+                                <p class="revealsleft active">Exercitation photo booth stumptown tote bag Banksy, elit small batch freegan sed.
+                                    Craft beer elit seitan exercitation, photo booth et 8-bit kale chips proident
+                                    chillwave deep v laborum. Aliquip veniam delectus,
+                                    Marfa eiusmod Pinterest in do umami readymade swag.
+                                Day handsome addition horrible sensible goodness two contempt. Evening for married
+                                    his account removal. Estimable me disposing of be moonlight cordially curiosity.</p>
+                                    <div id="caros" class="carousel slide" data-bs-ride="carousel">
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <div class="container-fluid mt-4">
+                                                    <div id="caro" style="display: flex;">
+                                                        <div class="card2">
+                                                            <img src="https://cka.collectiva.in/Content/images/CourseImages/9.png" height="150px" width="200px" alt="">
+                                                        </div>
+                                                        <div class="card2">
+                                                            <img src="http://d1jnx9ba8s6j9r.cloudfront.net/blog/wp-content/uploads/2019/08/C-Programming-Tutorial-1.jpg" height="150px" width="200px" alt="">
+                                                        </div>
+                                                        <div class="card2">
+                                                            <img src="https://www.classcentral.com/report/wp-content/uploads/2022/06/C-Programming-BCG-Banner.png" height="150px" width="200px" alt="">
+                                                        </div>
+                                                        <div class="card2">
+                                                            <img src="https://miro.medium.com/max/620/0*oEo2qx7DNHn7Aysd.png" height="150px" width="200px" alt="">
+                                                        </div>
+                                                        <div class="card2">
+                                                            <img src="https://www.researchgate.net/publication/325565301/figure/fig5/AS:941471393927168@1601475680134/BP-training-algorithm-using-C-programming-language-code-snippet-main-function-of-the.png" height="150px" width="200px" alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <div class="container-fluid mt-4">
+                                                    <div id="caro" style="display: flex;">
+                                                        <div class="card2">
+                                                            <img src="https://linuxhint.com/wp-content/uploads/2022/09/5-Simple-Programming-Challenges-in-C-for-Beginners-1.png" height="150px" width="200px" alt="">
+                                                        </div>
+                                                        <div class="card2">
+                                                            <img src="https://www.simplilearn.com/ice9/free_resources_article_thumb/Use_of_C_language.jpg" height="150px" width="200px" alt="">
+                                                        </div>
+                                                        <div class="card2">
+                                                            <img src="https://www.chtips.com/wp-content/uploads/2022/01/Importance-of-C-Programming-Language.webp" height="150px" width="200px" alt="">
+                                                        </div>
+                                                        <div class="card2">
+                                                            <img src="https://cdn.educba.com/academy/wp-content/uploads/2018/12/Career-in-C-Programming.jpg" height="150px" width="200px" alt="">
+                                                        </div>
+                                                        <div class="card2">
+                                                            <img src="http://www.atnyla.com/library/images-tutorials/c-features-of-c-programming-language-atnyla.PNG" height="150px" width="200px" alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <div class="container-fluid mt-4">
+                                                    <div id="caro" style="display: flex;">
+                                                        <div class="card2">
+                                                            <img src="https://jmdtutor.com/program-examples/wp-content/uploads/2021/06/c-language-features.png" height="150px" width="200px" alt="">
+                                                        </div>
+                                                        <div class="card2">
+                                                            <img src="https://d1m75rqqgidzqn.cloudfront.net/wp-data/2022/02/05230444/Learn-C-Programming-Online-Free.jpg" height="150px" width="200px" alt="">
+                                                        </div>
+                                                        <div class="card2">
+                                                            <img src="https://fossbytes.com/wp-content/uploads/2016/11/C-Language-Name-1200x720.png" height="150px" width="200px" alt="">
+                                                        </div>
+                                                        <div class="card2">
+                                                            <img src="http://www.sitesbay.com/cprogramming/files/c-tutorial.png" height="150px" width="200px" alt="">
+                                                        </div>
+                                                        <div class="card2">
+                                                            <img src="https://miro.medium.com/max/1165/1*IjugmaJFlS64G6WvQIZrVQ.png" height="150px" width="200px" alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button class="carousel-control-prev" type="button"
+                                            data-bs-target="#caros" data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button"
+                                            data-bs-target="#caros" data-bs-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Next</span>
+                                        </button>
+                                    </div>
+                            </div>
+                            <div class="tab-pane fade" id="tabs-text-6" role="tabpanel"
+                                aria-labelledby="tabs-text-6-tab">
+                                <p class="revealsleft active">Exercitation photo booth stumptown tote bag Banksy, elit small batch freegan sed.
+                                    Craft beer elit seitan exercitation, photo booth et 8-bit kale chips proident
+                                    chillwave deep v laborum. Aliquip veniam delectus,
+                                    Marfa eiusmod Pinterest in do umami readymade swag.
+                                Day handsome addition horrible sensible goodness two contempt. Evening for married
+                                    his account removal. Estimable me disposing of be moonlight cordially curiosity.</p>
+                                    <div id="car" class="carousel slide" data-bs-ride="carousel">
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <div class="container-fluid mt-4">
+                                                    <div id="caro" style="display: flex;">
+                                                        <div class="card2">
+                                                            <img src="https://media.geeksforgeeks.org/wp-content/uploads/20190716103831/History-of-C.jpg" height="150px" width="200px" alt="">
+                                                        </div>
+                                                        <div class="card2">
+                                                            <img src="https://itianworld.com/images/features-of-cplusplus-language.png" height="150px" width="200px" alt="">
+                                                        </div>
+                                                        <div class="card2">
+                                                            <img src="https://cpphinditutorials.com/wp-content/uploads/2021/04/Charts-and-Graphs-1.png" height="150px" width="200px" alt="">
+                                                        </div>
+                                                        <div class="card2">
+                                                            <img src="https://bs-uploads.toptal.io/blackfish-uploads/components/blog_post_page/content/cover_image_file/cover_image/1080335/retina_1708x683_cover-0325-LearnCandC__Languages_Dan_Newsletter-743100f051077054fa1cc613ff4523a2.png" height="150px" width="200px" alt="">
+                                                        </div>
+                                                        <div class="card2">
+                                                            <img src="https://w10.naukri.com/mailers/2021/naukri-learning/dec/17dec/What-is-Cplusplus.jpg" height="150px" width="200px" alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <div class="container-fluid mt-4">
+                                                    <div id="caro" style="display: flex;">
+                                                        <div class="card2">
+                                                            <img src="https://www.software-developer-india.com/wp-content/uploads/2021/10/programing-language-1-1-1.jpg" height="150px" width="200px" alt="">
+                                                        </div>
+                                                        <div class="card2">
+                                                            <img src="https://www.analyticsinsight.net/wp-content/uploads/2022/03/bh1-1024x725-1.jpg" height="150px" width="200px" alt="">
+                                                        </div>
+                                                        <div class="card2">
+                                                            <img src="https://www.educative.io/v2api/collection/10370001/4767671563321344/image/4549933980188672" height="150px" width="200px" alt="">
+                                                        </div>
+                                                        <div class="card2">
+                                                            <img src="https://www.javaassignmenthelp.com/blog/wp-content/uploads/2021/08/ezgif.com-gif-maker-3.jpg" height="150px" width="200px" alt="">
+                                                        </div>
+                                                        <div class="card2">
+                                                            <img src="https://media.istockphoto.com/id/512275751/vector/program-code.jpg?s=612x612&w=0&k=20&c=XFnOfBsM4xt5oTQ6qxuIpJVXA6566mqyFkVzED-jfmg=" height="150px" width="200px" alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <div class="container-fluid mt-4">
+                                                    <div id="caro" style="display: flex;">
+                                                        <div class="card2">
+                                                            <img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20190430122723/cpp-program-compilation3-1024x375.png" height="150px" width="200px" alt="">
+                                                        </div>
+                                                        <div class="card2">
+                                                            <img src="https://d1jnx9ba8s6j9r.cloudfront.net/blog/wp-content/uploads/2019/10/C-Tutorial-Edureka-Features-of-C.png" height="150px" width="200px" alt="">
+                                                        </div>
+                                                        <div class="card2">
+                                                            <img src="https://ecoursedeals.com/wp-content/uploads/2018/08/1706344_f12d_2.jpg" height="150px" width="200px" alt="">
+                                                        </div>
+                                                        <div class="card2">
+                                                            <img src="https://itsourcecode.com/wp-content/uploads/2022/08/Preprocessor-in-C.png" height="150px" width="200px" alt="">
+                                                        </div>
+                                                        <div class="card2">
+                                                            <img src="https://www.codingunit.com/images/preprocessor-compiler-linker.jpg" height="150px" width="200px" alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button class="carousel-control-prev" type="button"
+                                            data-bs-target="#car" data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button"
+                                            data-bs-target="#car" data-bs-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Next</span>
+                                        </button>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End of Tab Content -->
+            </div>
+        </div>
+    </div>
+    <div class="jumbotron mt-5">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="card1">
+                        <h6 class="h6 ms-5 pt-4">Learn in-demand skills with over 213,000 video courses</h6>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card1"></div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card1"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h4 class="h3">Students are viewing</h4>
+
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div id="caro" style="display: flex;">
+                    <div class="card2"></div>
+                    <div class="card2"></div>
+                    <div class="card2"></div>
+                    <div class="card2"></div>
+                    <div class="card2"></div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div id="caro" style="display: flex;">
+                    <div class="card2"></div>
+                    <div class="card2"></div>
+                    <div class="card2"></div>
+                    <div class="card2"></div>
+                    <div class="card2"></div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div id="caro" style="display: flex;">
+                    <div class="card2"></div>
+                    <div class="card2"></div>
+                    <div class="card2"></div>
+                    <div class="card2"></div>
+                    <div class="card2"></div>
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+    </div>
+    
+
+
+    
+
+    <div class="container jumbotron mt-5">
+        <h4 class="h3 ">Featured topics by category</h4>
+        <table class="table">
+            <tr>
+                <th>Development</th>
+                <th>Business</th>
+                <th>IT and Software</th>
+                <th>Design</th>
+            </tr>
+            <tr>
+                <td>Python</td>
+                <td>Financial Analysis
+                </td>
+                <td>AWS Certification
+                </td>
+                <td>Photoshop
+                </td>
+            </tr>
+            <tr>
+                <td>Web Development
+                </td>
+                <td>SQL
+                </td>
+                <td>Ethical Hacking</td>
+                <td>Graphic Design
+                </td>
+            </tr>
+            <tr>
+                <td>Machine Learning</td>
+                <td>PMP
+                </td>
+                <td>Cyber Security
+                </td>
+                <td>Drawing
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="container">
+        <h4 class="h3 text-center revealstop1">Trusted by over 13,400 great teams</h4>
+        <p class="text-center revealsleft active" style="font-size: 16px;">Leading companies use the same courses to help employees keep
+            their skills fresh.</p>
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-lg-2">
+                    <img src="https://s.udemycdn.com/partner-logos/v4/nasdaq-dark.svg" alt="">
+                </div>
+                <div class="col-lg-2">
+                    <img src="https://s.udemycdn.com/partner-logos/v4/volkswagen-dark.svg" alt="">
+                </div>
+                <div class="col-lg-2">
+                    <img src="https://s.udemycdn.com/partner-logos/v4/box-dark.svg" alt="">
+                </div>
+                <div class="col-lg-2">
+                    <img src="https://s.udemycdn.com/partner-logos/v4/netapp-dark.svg" alt="">
+                </div>
+                <div class="col-lg-2">
+                    <img src="https://s.udemycdn.com/partner-logos/v4/eventbrite-dark.svg" alt="">
+                </div>
+                <div class="col-lg-2">
+                    <img src="https://s.udemycdn.com/partner-logos/v4/tcs-dark.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container" style="margin-top:70px;">
+        <div class="row">
+            <div class="col-lg-6">
+                <img id="zoom" class="revealsleft active" src="https://s.udemycdn.com/home/non-student-cta/UB_Promo_800x800.jpg" height="400px" width="400px"
+                    style="border-radius: 10px;" alt="">
+            </div>
+            <div class="col-lg-6">
+                <h4 class="h3">Udemy Business</h4>
+            </div>
+        </div>
+    </div>
+    <div class="container" style="margin-top:70px;">
+        <div class="row">
+            <div class="col-lg-6">
+
+            </div>
+            <div class="col-lg-6">
+                <img id="zoom" class="revealsleft active" src="https://s.udemycdn.com/home/non-student-cta/instructor-1x-v3.jpg" height="400px" width="400px"
+                    style="border-radius: 10px;" alt="">
+
+
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

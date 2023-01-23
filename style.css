@@ -1,0 +1,309 @@
+#mid {
+    height: 400px;
+    width: 100%;
+    margin-top: 70px;
+    background-image:url('C:/Users/HP/Downloads/My1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+
+}
+
+.h3 {
+    font-size: 28px;
+    color: #165ec4;
+
+ 
+    font-family: "Open Sans";
+
+    font-weight: bold;
+    text-transform: uppercase;
+   
+
+
+
+
+
+
+}
+
+.pain {
+       
+    font-size: 14px;
+    padding: 11px 12px;
+    padding-top: 11px;
+    padding-right: 12px;
+    padding-bottom: 11px;
+    padding-left: 12px;
+    margin: 0 12px 16px 0;
+    border-radius: 8px;
+    box-shadow: 0 6px 16px rgb(52 105 203 / 16%);
+    animation-name: id;
+        animation-duration: 3s;
+    transition: all;
+}
+@keyframes id {
+    0% {
+        transform: translate(0px, 100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translate(0px, 0);
+        opacity: 1;
+    }
+    
+}
+
+@keyframes id1 {
+    0% {
+        transform: translate(0px, 100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translate(0px, 0);
+        opacity: 1;
+    }
+    
+}
+
+p {
+    line-height: 1.45;
+    font-size: 16px;
+
+    color: rgb(74, 74, 82);
+    
+    padding-bottom: 10px;
+    font-family: "Open Sans";
+
+}
+
+.h4 {
+    font-size: 24px;
+    font-family: "Open Sans";
+    padding-bottom: 10px;
+    
+
+
+}
+
+.card1 {
+    height: 100px;
+    width: 400px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+table tr td {
+    font-size: 1rem;
+    font-family: "Open Sans";
+
+}
+
+table tr th {
+    font-size: 16px;
+    font-family: "Open Sans";
+    color: rgb(74, 74, 74);
+
+}
+
+* {
+    margin: 0%;
+}
+
+#header {
+    height: 100px;
+    width: 100%;
+
+}
+
+.logo {
+    height: 100px;
+    width: 20%;
+
+    float: left;
+    padding-bottom: 10px;
+
+}
+
+.menu {
+    height: 100px;
+    width: 80%;
+
+    float: right;
+
+}
+
+.first {
+    height: 50px;
+
+}
+
+.second {
+    height: 50px;
+
+}
+
+.card2 {
+    height: 200px;
+    width: 250px;
+    
+}
+/* #zoom
+{
+    animation-name: anni;
+    animation-iteration-count: infinite;
+    animation-duration: 8s;
+    transition: all;
+}
+
+@keyframes anni {
+    0%{
+        transform: scale(0.5);
+    }
+    
+    90%{transform: scale(1);}
+    
+} */
+#d1 {
+    width: 150px;
+    height: 200px;
+    position: fixed;
+    display: none;
+    text-align: start;
+    background-color: rgb(255, 255, 255);
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    position: absolute;
+    z-index: 2;
+    box-shadow: 0 0 24px 0 rgba(121, 36, 36, 0.12);
+    padding-top: 20px;
+ 
+ 
+ }
+ 
+ #t1:hover #d1 {
+    display: block;
+ 
+ }
+
+ #d2 {
+    width: 180px;
+    height: 200px;
+    
+    display: none;
+    text-align: start;
+    background-color: rgb(255, 255, 255);
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    position: absolute;
+    z-index: 2;
+    box-shadow: 0 0 24px 0 rgba(121, 36, 36, 0.12);
+    padding-top: 20px;
+    margin-left: 130px;
+   
+ 
+ 
+ }
+ 
+ #t2:hover #d2 {
+    display: block;
+ 
+ }
+ li
+ {
+    list-style:none ;
+    text-decoration: none;
+    color: black;
+ }
+ a:hover
+ {
+    text-decoration: none;
+    color: black;
+ }
+ a{
+    color: black;
+    font-family: "Open Sans";
+ }
+ .login
+ {
+    height: 350px;
+    width: 400px;
+    background-color: white;
+    border-radius: 10px;
+
+ }
+ form .form-control:focus{
+    border-color: #65a9ec;
+    box-shadow: none;
+  }
+  table tr td
+{
+    font-size: 14px;
+    color: #6441A5;
+    
+}
+
+
+input
+{
+    
+    border-color:#6441A5 ;
+    box-shadow: none;
+    box-shadow: none;
+
+}
+textarea
+{
+    height: 30px;
+    width: 300px;
+    border-color:#6441A5 ;  
+}
+input[type="button"]
+{
+    height: 40px;
+    width: 80px;
+    background-color: #6441A5;
+    color: white;
+    border-radius: 10px;
+    border-style: none;
+    margin-top: 10px;
+}
+
+
+
+.revealstop1{
+    position: relative;
+    transform: translateY(-150px);
+    opacity: 0;
+    transition: 1s all ease;
+  }
+  
+  .revealstop1.active{
+    transform: translateY(0);
+    opacity: 1;
+  }
+  
+  .revealsleft{
+    position: relative;
+    transform: translateX(-150px);
+    opacity: 0;
+    transition: 1s all ease;
+  }
+  
+  .revealsleft.active{
+    transform: translateX(0);
+    opacity: 1;
+  }
+  .revealsright{
+    position: relative;
+    transform: translateX(150px);
+    opacity: 0;
+    transition: 1s all ease;
+  }
+  
+  .revealsright.active{
+    transform: translateX(0);
+    opacity: 1;
+  }
